@@ -1,0 +1,105 @@
+/*Filename: mystyle.css
+ Author: Esther Chukwunwike
+ Date: 10/10/2021
+ Description: My tic-tac-toe style page
+*/
+
+/*Specifies the body background color*/
+body {
+   color: #545454;
+   display: flex;
+   font-family: sans-serif;
+}
+
+/* box settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #fff;
+    background:#507283;
+}
+
+/* pop up settings */
+.popup {
+    background-color: rgb(172, 160, 155);
+    width: 35rem;
+    height: 25rem;
+    position:absolute;
+    left: 29%;
+    top: 320px;
+    
+    visibility: hidden;
+}
+
+/* x on pop up settings */
+#cross {
+    text-align: right;
+    margin-right: 7px;
+    color: rgb(15, 15, 15);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* text settings in pop up */
+#status {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+
+/* container settings */
+.container {
+    background: #14BDAC;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container h1 {
+    padding-bottom: 2rem;
+}
+  
+/* tic-tac area settings  */
+.tic-tac {
+     border: 1px solid rgb(252, 165, 4);
+     max-width: 32rem;
+     margin: 3rem auto;
+     min-height: 32rem;
+     background-color: #c100f1;
+     border-radius: 7px;
+     padding: 5rem;
+     text-align: center;
+}
+
+/* box section setting */
+.cell1,.cell2,.cell3,.cell4,.cell5,.cell6,.cell7,.cell8,.cell9 {
+     display: inline-block;
+     background-color: #544196;
+     width: 100px;
+     height: 100px;
+     border: 1px solid white;
+     border-radius: 7px;
+     
+     /*a, b, c image settings */
+     background-position: center;
+     background-size: contain;
+}
+
+/* button setting */
+#check-btn {
+    width: 101px;
+    height: 40px;
+    border-radius: 17px;
+    
+}
+
+.instructions {
+    text-align: left;
+    list-style-position: inside;
+}
